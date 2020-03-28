@@ -1,22 +1,8 @@
 import discord
 import asyncio
-import random
 import openpyxl
-from discord import Member
-from discord.ext import commands
-import youtube_dl
-from urllib.request import urlopen, Request
-import urllib
-import urllib.request
-import bs4
-from bs4 import BeautifulSoup
 import os
-import sys
-import json
-from selenium import webdriver
-import time
-import datetime
-from urllib.request import urlopen
+
 
 client = discord.Client()
 
@@ -188,5 +174,5 @@ async def on_message(message):
                                       await message.channel.send(str(message.author) + "패널티로 레벨을 초기화했습니다.")
                                       break
                               i = i + 1
-                              
-client.run('NjkxMTc4OTQyMzc1Mzk1MzQ5.XncMmA.MI2NjAh-sdI09L_HW_WIz2Qt4r8')
+access_token = os.environ["BOT_TOKEN"]                            
+client.run(access_token)
